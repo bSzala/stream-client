@@ -8,7 +8,7 @@ import {
 import _ from 'lodash';
 
 
-export default (state = {}, action) => {
+const reducer = (state = {}, action) => {
     switch (action.type) {
         case CREATE_STREAM:
         case EDIT_STREAM:
@@ -22,3 +22,5 @@ export default (state = {}, action) => {
             return state;
     }
 }
+
+export default reducer;
